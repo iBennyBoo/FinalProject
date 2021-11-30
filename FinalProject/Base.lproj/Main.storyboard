@@ -58,10 +58,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J4Y-Zn-UT6">
-                                <rect key="frame" x="16" y="96" width="343" height="190"/>
+                                <rect key="frame" x="16" y="96" width="343" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99786518409826364" green="1" blue="0.57787777984539879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">The computer will randomly generate a word to guess. The player will guess the word one letter at a time. If the player guesses a letter not part of the word,  a piece of the man will appear. Once the man has fully appeared (5 mistakes), the game is over. If you guess the word correctly with the man not fully formed!</string>
+                                <string key="text">The computer will randomly generate a word to guess. The player will guess the word one letter at a time. If the player guesses a letter not part of the word, a piece of the man will appear. Once the man has fully appeared (4 mistakes), the game is over.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -71,10 +71,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vbY-M6-1ay">
-                                <rect key="frame" x="12" y="303" width="350" height="94"/>
+                                <rect key="frame" x="12" y="269" width="350" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99786518410000002" green="1" blue="0.57787777979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">To earn DABLOONS™, you have to guess the word correctly. You get 10 per letter of the word. You can use the DABLOONS™ in the shop!</string>
+                                <string key="text">To earn DABLOONS™, you have to guess the word correctly. You get 10 per letter of the word. You can use the DABLOONS™ in the shop to buy cool cosmetics for your man!</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
