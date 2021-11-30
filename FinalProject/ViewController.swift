@@ -1,6 +1,6 @@
 import UIKit
 class ViewController: UIViewController {
-
+//this is a comment lmao - BennyBoy
     override func viewDidLoad() {
         super.viewDidLoad()
         let x = CAGradientLayer()

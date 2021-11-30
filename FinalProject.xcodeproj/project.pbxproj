@@ -20,6 +20,7 @@
 		5922BC1327555A830029079E /* HowToPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922BC1227555A830029079E /* HowToPlayController.swift */; };
 		5922BC1527555A980029079E /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922BC1427555A980029079E /* GameController.swift */; };
 		5922BC1727555AAD0029079E /* ShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922BC1627555AAD0029079E /* ShopController.swift */; };
+		59CDEFF2275658C800774A71 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDEFF1275658C800774A71 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5922BC1227555A830029079E /* HowToPlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayController.swift; sourceTree = "<group>"; };
 		5922BC1427555A980029079E /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		5922BC1627555AAD0029079E /* ShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopController.swift; sourceTree = "<group>"; };
+		59CDEFF1275658C800774A71 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +111,13 @@
 			children = (
 				5922BBD72755565E0029079E /* AppDelegate.swift */,
 				5922BBD92755565E0029079E /* SceneDelegate.swift */,
-				5922BBDB2755565E0029079E /* ViewController.swift */,
 				5922BBDD2755565E0029079E /* Main.storyboard */,
+				5922BBDB2755565E0029079E /* ViewController.swift */,
 				5922BC1227555A830029079E /* HowToPlayController.swift */,
 				5922BC1427555A980029079E /* GameController.swift */,
 				5922BC1627555AAD0029079E /* ShopController.swift */,
 				5922BBE3275556600029079E /* Assets.xcassets */,
+				59CDEFF1275658C800774A71 /* CustomTableViewCell.swift */,
 				5922BBE5275556600029079E /* LaunchScreen.storyboard */,
 				5922BBE8275556600029079E /* Info.plist */,
 				5922BBE02755565E0029079E /* FinalProject.xcdatamodeld */,
@@ -272,6 +275,7 @@
 			files = (
 				5922BBDC2755565E0029079E /* ViewController.swift in Sources */,
 				5922BC1527555A980029079E /* GameController.swift in Sources */,
+				59CDEFF2275658C800774A71 /* CustomTableViewCell.swift in Sources */,
 				5922BC1327555A830029079E /* HowToPlayController.swift in Sources */,
 				5922BC1727555AAD0029079E /* ShopController.swift in Sources */,
 				5922BBD82755565E0029079E /* AppDelegate.swift in Sources */,
