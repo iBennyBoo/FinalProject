@@ -10,4 +10,11 @@ class GameController: UIViewController {
     }
     
 
+    
+    //do the msoe thing, make word in an array!
+    
+    
+    
+    
+    
 }
