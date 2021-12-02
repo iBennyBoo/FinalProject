@@ -5,6 +5,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let names: [String] = ["The Stickman", "The... Ya Know...", "The Rock", "The Sussy Baka", "The Legend"]
     let prices: [String] = ["0 DABLOONS™", "100 DABLOONS™", "250 DABLOONS™", "500 DABLOONS™", "2500 DABLOONS™"]
     
+    
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
     @IBOutlet weak var counterLabel: UILabel!
     
