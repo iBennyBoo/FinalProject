@@ -1,6 +1,8 @@
 import UIKit
 class HowToPlayController: UIViewController {
 
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let x = CAGradientLayer()

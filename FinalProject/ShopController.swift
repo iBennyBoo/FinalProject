@@ -6,6 +6,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let prices: [String] = ["0 DABLOONS™", "100 DABLOONS™", "250 DABLOONS™", "500 DABLOONS™", "2500 DABLOONS™"]
     
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
+    @IBOutlet weak var counterLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,21 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let alert = UIAlertController(title: "Selected \(names[indexPath.row])", message: "Are You Sure You Want To Purchase This Item?", preferredStyle: .alert)
+        let no = UIAlertAction(title: "Negative", style: .default, handler: nil)
+        let yes = UIAlertAction(title: "Affirmative", style: .default, handler: { [self] action in
+            //if currency >= price of item
+                //alert saying purchase was successful
+                //unlock skin
+            //else
+                //let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
+                //let ouch = UIAlertAction(title: "D:", style: .default, handler: nil)
+                //lmao.addAction(ouch)
+                //present(lmao, animation: true, completion: nil)
+        })
+        alert.addAction(no)
+        alert.addAction(yes)
+        present(alert, animated: true, completion: nil)
     }
 
 }

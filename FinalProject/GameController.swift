@@ -1,6 +1,8 @@
 import UIKit
 class GameController: UIViewController {
 
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let x = CAGradientLayer()
@@ -12,7 +14,7 @@ class GameController: UIViewController {
 
     
     //do the msoe thing, make word in an array!
-    
+    //milwaukee school of engineering?
     
     
     

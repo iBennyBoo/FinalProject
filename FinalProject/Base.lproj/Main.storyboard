@@ -100,6 +100,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="How To Play" image="questionmark.app" catalog="system" id="9t5-sv-Zdu"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="LOg-0a-T0n" id="KqN-OX-4bR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOK-3Z-gUr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,6 +381,9 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" image="gamecontroller" catalog="system" id="hw5-o4-Ok2"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="p17-H1-2LN" id="KHh-vv-NmA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5q-K9-JWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" id="IOs-B1-DTM">
@@ -522,6 +528,7 @@
                     <tabBarItem key="tabBarItem" title="Shop" image="dollarsign.square" catalog="system" id="zvp-cK-ELS"/>
                     <connections>
                         <outlet property="collectionViewOutlet" destination="nfx-IH-OYX" id="CTh-OI-yW8"/>
+                        <outlet property="counterLabel" destination="W57-Cj-nn8" id="sdi-Rs-jZx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2P-0c-3Ox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
