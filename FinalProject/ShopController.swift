@@ -4,7 +4,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let unlockables: [UIImage] = [UIImage(named: "Default4")!, UIImage(named: "Carl4")!, UIImage(named: "Dwayne4")!, UIImage(named: "Imposter4")!, UIImage(named: "DripSeaver4")!]
     let names: [String] = ["The Stickman", "The... Ya Know...", "The Rock", "The Sussy Baka", "The Legend"]
     let prices: [String] = ["0 DABLOONS™", "100 DABLOONS™", "250 DABLOONS™", "500 DABLOONS™", "2500 DABLOONS™"]
-    
+    let x: [Int] = [0, 100, 250, 500, 2500]
     
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
     @IBOutlet weak var counterLabel: UILabel!
@@ -31,7 +31,6 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //print("collectionview")
         return CGSize(width: 343, height: 140)
         
     }
@@ -40,14 +39,22 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let alert = UIAlertController(title: "Selected \(names[indexPath.row])", message: "Are You Sure You Want To Purchase This Item?", preferredStyle: .alert)
         let no = UIAlertAction(title: "Negative", style: .default, handler: nil)
         let yes = UIAlertAction(title: "Affirmative", style: .default, handler: { [self] action in
+//           if(MasterClass.returnCurrency() >= x[indexPath.row]){
+//                MasterClass.changeCurrency(subtract: x[indexPath.row])
+//                let success = UIAlertController(title: "Purchase Successful!", message: "Congratulations Unlocking \(names[indexPath.row]).", preferredStyle: .alert)
+//                let epic = UIAlertAction(title: "Obama Moment", style: .default, handler: nil)
+//                success.addAction(epic)
+//                present(success, animated: true, completion: nil)
+//            } else{
+//                let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
+//                let ouch = UIAlertAction(title: "D:", style: .default, handler: nil)
+//                lmao.addAction(ouch)
+//                present(lmao, animated: true, completion: nil)
+//            }
             //if currency >= price of item
                 //alert saying purchase was successful
                 //unlock skin
-            //else
-                //let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
-                //let ouch = UIAlertAction(title: "D:", style: .default, handler: nil)
-                //lmao.addAction(ouch)
-                //present(lmao, animation: true, completion: nil)
+            
         })
         alert.addAction(no)
         alert.addAction(yes)
