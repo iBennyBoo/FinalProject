@@ -16,10 +16,28 @@ class GameController: UIViewController {
     @IBOutlet weak var loutlet: UIButton!
     
     
+    @IBOutlet weak var moulet: UIButton!
+    
+    
+    @IBOutlet weak var noutlet: UIButton!
+    
+    
+    @IBOutlet weak var ooutlet: UIButton!
+    
+    @IBOutlet weak var poutlet: UIButton!
+    
+    @IBOutlet weak var qoutlet: UIButton!
+    
+    
+    @IBOutlet weak var routlet: UIButton!
+    
+    
+    @IBOutlet weak var soutlet: UIButton!
     
     
     
     
+    @IBOutlet weak var toutlet: UIButton!
     
     
     

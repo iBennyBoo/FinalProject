@@ -395,6 +395,14 @@
                         <outlet property="joutlet" destination="LIu-Ql-rB5" id="wfa-gH-iOx"/>
                         <outlet property="koutlet" destination="u88-Ur-BX0" id="LQ4-rA-FpX"/>
                         <outlet property="loutlet" destination="kGg-Vn-pAb" id="YwM-7s-xiW"/>
+                        <outlet property="moulet" destination="Awr-Y1-fOh" id="PHJ-b1-9c1"/>
+                        <outlet property="noutlet" destination="67C-Uj-YWv" id="DFs-jf-2E6"/>
+                        <outlet property="ooutlet" destination="TIn-1J-DAJ" id="yKG-x4-bNY"/>
+                        <outlet property="poutlet" destination="a6h-E1-F1U" id="J87-jo-W0s"/>
+                        <outlet property="qoutlet" destination="dKk-sJ-N0P" id="LqV-Yo-DKN"/>
+                        <outlet property="routlet" destination="2G5-5a-auw" id="KNN-Pu-ydT"/>
+                        <outlet property="soutlet" destination="Gp3-dT-mD2" id="SBK-NN-k2F"/>
+                        <outlet property="toutlet" destination="wml-Sm-fTw" id="iZw-DI-sid"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5q-K9-JWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
