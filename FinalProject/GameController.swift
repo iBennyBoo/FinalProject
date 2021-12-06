@@ -81,7 +81,6 @@ class GameController: UIViewController {
            
            
            
-           
        }
        
     
