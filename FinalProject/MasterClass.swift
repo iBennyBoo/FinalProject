@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 public class MasterClass{
-    var currency : Int = 0
+    var currency : Int = 100
     var wordbank : [String] = [] //put all words here?
     
     func updateCurrency(count: Int){

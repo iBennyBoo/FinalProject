@@ -21,6 +21,9 @@
 		5922BC1527555A980029079E /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922BC1427555A980029079E /* GameController.swift */; };
 		5922BC1727555AAD0029079E /* ShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922BC1627555AAD0029079E /* ShopController.swift */; };
 		592888012757F8490011F42F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592888002757F8490011F42F /* CustomCell.swift */; };
+		59EFC8BA275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59EFC8B9275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 */; };
+		59EFC8BC275A58F300E29408 /* mr-krabs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59EFC8BB275A58F300E29408 /* mr-krabs.mp3 */; };
+		59EFC8BE275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59EFC8BD275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 */; };
 		59FFFC3A275824A700E1CD7A /* MasterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFFC39275824A700E1CD7A /* MasterClass.swift */; };
 		59FFFC3E27583D3E00E1CD7A /* trollface-smile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59FFFC3D27583D3D00E1CD7A /* trollface-smile.mp3 */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		5922BC1427555A980029079E /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		5922BC1627555AAD0029079E /* ShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopController.swift; sourceTree = "<group>"; };
 		592888002757F8490011F42F /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		59EFC8B9275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "donald-trump-wrong-sound-effect.mp3"; sourceTree = "<group>"; };
+		59EFC8BB275A58F300E29408 /* mr-krabs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mr-krabs.mp3"; sourceTree = "<group>"; };
+		59EFC8BD275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DA BABY LET'S GO - Sound Effect.mp3"; sourceTree = "<group>"; };
 		59FFFC39275824A700E1CD7A /* MasterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterClass.swift; sourceTree = "<group>"; };
 		59FFFC3D27583D3D00E1CD7A /* trollface-smile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trollface-smile.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +133,9 @@
 				5922BBE8275556600029079E /* Info.plist */,
 				5922BBE02755565E0029079E /* FinalProject.xcdatamodeld */,
 				59FFFC3D27583D3D00E1CD7A /* trollface-smile.mp3 */,
+				59EFC8B9275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 */,
+				59EFC8BB275A58F300E29408 /* mr-krabs.mp3 */,
+				59EFC8BD275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -253,8 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59FFFC3E27583D3E00E1CD7A /* trollface-smile.mp3 in Resources */,
+				59EFC8BA275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 in Resources */,
 				5922BBE7275556600029079E /* LaunchScreen.storyboard in Resources */,
+				59EFC8BC275A58F300E29408 /* mr-krabs.mp3 in Resources */,
 				5922BBE4275556600029079E /* Assets.xcassets in Resources */,
+				59EFC8BE275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 in Resources */,
 				5922BBDF2755565E0029079E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
