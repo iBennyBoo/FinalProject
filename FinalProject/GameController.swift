@@ -411,7 +411,7 @@ class GameController: UIViewController {
        }
        
        @IBAction func qbutton(_ sender: Any) {
-           var col  = false  var col  = false
+           var col  = false
            var loopAmt = 0
            for poo in special{
                if poo == "q"{
