@@ -49,7 +49,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <gestureRecognizer id="Gfz-dU-2FB"/>
             </objects>
-            <point key="canvasLocation" x="372" y="881.10944527736137"/>
+            <point key="canvasLocation" x="-623" y="860"/>
         </scene>
         <!--How To Play-->
         <scene sceneID="TPW-3p-dRo">
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOK-3Z-gUr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560.8" y="880.20989505247383"/>
+            <point key="canvasLocation" x="12" y="860"/>
         </scene>
         <!--Game-->
         <scene sceneID="gdh-RT-8y8">
@@ -560,7 +560,7 @@
                     <viewLayoutGuide key="safeArea" id="vR5-eL-VYR"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="2880.8000000000002" y="924.28785607196414"/>
+            <point key="canvasLocation" x="654" y="860"/>
         </scene>
         <!--Shop-->
         <scene sceneID="Cfm-qB-iZu">
@@ -643,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2P-0c-3Ox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-406" y="862"/>
+            <point key="canvasLocation" x="1292" y="860"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dr2-aH-Kn9">

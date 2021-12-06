@@ -5,6 +5,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let names: [String] = ["The Stickman", "The... Ya Know...", "The Rock", "The Sussy Baka", "The Legend"]
     let prices: [String] = ["0 DABLOONS™", "100 DABLOONS™", "250 DABLOONS™", "500 DABLOONS™", "2500 DABLOONS™"]
     let x: [Int] = [0, 100, 250, 500, 2500]
+    var bruh: MasterClass!
     
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
     @IBOutlet weak var counterLabel: UILabel!
@@ -39,21 +40,23 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let alert = UIAlertController(title: "Selected \(names[indexPath.row])", message: "Are You Sure You Want To Purchase This Item?", preferredStyle: .alert)
         let no = UIAlertAction(title: "Negative", style: .default, handler: nil)
         let yes = UIAlertAction(title: "Affirmative", style: .default, handler: { [self] action in
-//           if(MasterClass.returnCurrency() >= x[indexPath.row]){
-//                MasterClass.changeCurrency(subtract: x[indexPath.row])
-//                let success = UIAlertController(title: "Purchase Successful!", message: "Congratulations Unlocking \(names[indexPath.row]).", preferredStyle: .alert)
-//                let epic = UIAlertAction(title: "Obama Moment", style: .default, handler: nil)
-//                success.addAction(epic)
-//                present(success, animated: true, completion: nil)
-//            } else{
-//                let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
-//                let ouch = UIAlertAction(title: "D:", style: .default, handler: nil)
-//                lmao.addAction(ouch)
-//                present(lmao, animated: true, completion: nil)
-//            }
-            //if currency >= price of item
-                //alert saying purchase was successful
-                //unlock skin
+           if(1 >= x[indexPath.row]){ //change later and add currency removal
+        
+                let success = UIAlertController(title: "Purchase Successful!", message: "Congratulations Unlocking \(names[indexPath.row]).", preferredStyle: .alert)
+                let epic = UIAlertAction(title: "Obama Moment", style: .default, handler: nil)
+                success.addAction(epic)
+                present(success, animated: true, completion: nil)
+               //change color of custom cell background color
+               //new variable of selected skin, type UIImage in MasterClass
+               //Change label in customcell somehow
+               //variable for cells if its bought or not
+                    //if bought, clicking again would select as skin
+            } else{
+                let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
+                let ouch = UIAlertAction(title: "D;", style: .default, handler: nil)
+                lmao.addAction(ouch)
+                present(lmao, animated: true, completion: nil)
+            }
             
         })
         alert.addAction(no)
