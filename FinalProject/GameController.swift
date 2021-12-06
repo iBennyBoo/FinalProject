@@ -48,6 +48,7 @@ class GameController: UIViewController {
        var guesses = 0
        var theSpot = 0
        var put = [String]()
+       var wrong = 0
        //var inString = ""
 
        
@@ -106,6 +107,7 @@ class GameController: UIViewController {
            }
            else{
                aoutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -129,6 +131,7 @@ class GameController: UIViewController {
            }
            else{
                boutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -149,6 +152,7 @@ class GameController: UIViewController {
            }
            else{
                coutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -169,6 +173,7 @@ class GameController: UIViewController {
            }
            else{
                doutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -189,6 +194,7 @@ class GameController: UIViewController {
            }
            else{
                eoutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
     
@@ -209,6 +215,7 @@ class GameController: UIViewController {
            }
            else{
                foutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -229,6 +236,7 @@ class GameController: UIViewController {
            }
            else{
                goutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -250,6 +258,7 @@ class GameController: UIViewController {
            }
            else{
                houtlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -270,6 +279,7 @@ class GameController: UIViewController {
            }
            else{
                ioutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
     
@@ -290,6 +300,7 @@ class GameController: UIViewController {
            }
            else{
                joutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -309,6 +320,7 @@ class GameController: UIViewController {
            }
            else{
                koutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -328,6 +340,7 @@ class GameController: UIViewController {
            }
            else{
                loutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -347,6 +360,7 @@ class GameController: UIViewController {
            }
            else{
                moulet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -367,6 +381,7 @@ class GameController: UIViewController {
            }
            else{
                noutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
     
@@ -387,6 +402,7 @@ class GameController: UIViewController {
            }
            else{
                ooutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -406,6 +422,7 @@ class GameController: UIViewController {
            }
            else{
                poutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -425,6 +442,7 @@ class GameController: UIViewController {
            }
            else{
                qoutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -444,6 +462,7 @@ class GameController: UIViewController {
            }
            else{
                routlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -464,6 +483,7 @@ class GameController: UIViewController {
            }
            else{
                soutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -484,6 +504,7 @@ class GameController: UIViewController {
            }
            else{
                toutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -503,6 +524,7 @@ class GameController: UIViewController {
            }
            else{
                uoutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -524,6 +546,7 @@ class GameController: UIViewController {
            }
            else{
                voulet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -544,6 +567,7 @@ class GameController: UIViewController {
            }
            else{
                woutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -564,6 +588,7 @@ class GameController: UIViewController {
            }
            else{
                xoutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -583,6 +608,7 @@ class GameController: UIViewController {
            }
            else{
                youtlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -603,6 +629,7 @@ class GameController: UIViewController {
            }
            else{
                zoutlet.backgroundColor = UIColor.red
+               wrong = wrong + 1
            }
        }
        
@@ -639,10 +666,23 @@ class GameController: UIViewController {
            
            
            
+    func changePerson(wrong: Int){
+        
+        
+        
+        
+        
+        
+        
+        
+    }
            
            
-           
-           
+          
+    
+    
+    
+    
            
            
        }
