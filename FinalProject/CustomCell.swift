@@ -15,4 +15,9 @@ public class CustomCell: UICollectionViewCell{
         imageOutlet?.image = picture
         labelOutletTwo?.text = second
     }
+    
+    func boughtCharacter(){
+        labelOutlet.text = "Unlocked"
+        labelOutletTwo.isHidden = true
+    }
 }

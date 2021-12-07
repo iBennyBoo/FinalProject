@@ -1,13 +1,12 @@
 import Foundation
 import UIKit
 public class MasterClass{
-    var currency : Int = 100
-    var wordbank : [String] = [] //put all words here?
-    var character: Int = 1
+    var currency : Int = 0
+    var character: Int = 0
     
     func updateCurrency(count: Int){
         currency += 10 * count
-        //update Labels
+        //update Labels?
     }
     
     func changeCurrency(subtract: Int){

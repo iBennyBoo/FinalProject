@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //Plays audio if user shakes phone
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             let sound = Bundle.main.path(forResource: "trollface-smile", ofType: "mp3")!
