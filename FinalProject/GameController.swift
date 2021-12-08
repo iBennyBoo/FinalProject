@@ -755,21 +755,18 @@ class GameController: UIViewController {
             
         case 0:
         personImage.image = imagee
-            
-        
         case 1:
-            print("The last letter of the alphabet")
+            personImage.image = imagee
         case 2:
-            print("The last letter of the alphabet")
-
+            personImage.image = imagee
         case 3:
-            print("The last letter of the alphabet")
-            
+            personImage.image = imagee
         case 4:
-            print("g")
-
+            personImage.image = imagee
+            
         default:
-            print("Some other character")
+            personImage.image = imagee
+
             
             
             
@@ -806,6 +803,20 @@ class GameController: UIViewController {
             print("error")
         }
     }
+    
+    
+    func winningThing(){
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
     
     
     
