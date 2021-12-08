@@ -677,7 +677,7 @@
         <image name="buffDoge" width="1538" height="2085"/>
         <image name="dollarsign.square" catalog="system" width="128" height="114"/>
         <image name="gamecontroller" catalog="system" width="128" height="80"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house" catalog="system" width="32" height="32"/>
         <image name="howToPlayHangman" width="376" height="376"/>
         <image name="pole" width="1734" height="3046"/>
         <image name="questionmark.app" catalog="system" width="128" height="114"/>

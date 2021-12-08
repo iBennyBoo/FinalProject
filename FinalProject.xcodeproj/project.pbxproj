@@ -24,6 +24,7 @@
 		59EFC8BA275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59EFC8B9275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 */; };
 		59EFC8BC275A58F300E29408 /* mr-krabs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59EFC8BB275A58F300E29408 /* mr-krabs.mp3 */; };
 		59EFC8BE275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59EFC8BD275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 */; };
+		59F1BD182760E56600C8FC46 /* Sheesh - Tik Tok Audio Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59F1BD172760E56500C8FC46 /* Sheesh - Tik Tok Audio Sound Effect.mp3 */; };
 		59FFFC3A275824A700E1CD7A /* MasterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFFC39275824A700E1CD7A /* MasterClass.swift */; };
 		59FFFC3E27583D3E00E1CD7A /* trollface-smile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59FFFC3D27583D3D00E1CD7A /* trollface-smile.mp3 */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		59EFC8B9275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "donald-trump-wrong-sound-effect.mp3"; sourceTree = "<group>"; };
 		59EFC8BB275A58F300E29408 /* mr-krabs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mr-krabs.mp3"; sourceTree = "<group>"; };
 		59EFC8BD275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DA BABY LET'S GO - Sound Effect.mp3"; sourceTree = "<group>"; };
+		59F1BD172760E56500C8FC46 /* Sheesh - Tik Tok Audio Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sheesh - Tik Tok Audio Sound Effect.mp3"; sourceTree = "<group>"; };
 		59FFFC39275824A700E1CD7A /* MasterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterClass.swift; sourceTree = "<group>"; };
 		59FFFC3D27583D3D00E1CD7A /* trollface-smile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trollface-smile.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 				59FFFC3D27583D3D00E1CD7A /* trollface-smile.mp3 */,
 				59EFC8B9275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 */,
 				59EFC8BB275A58F300E29408 /* mr-krabs.mp3 */,
+				59F1BD172760E56500C8FC46 /* Sheesh - Tik Tok Audio Sound Effect.mp3 */,
 				59EFC8BD275A58FA00E29408 /* DA BABY LET'S GO - Sound Effect.mp3 */,
 			);
 			path = FinalProject;
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F1BD182760E56600C8FC46 /* Sheesh - Tik Tok Audio Sound Effect.mp3 in Resources */,
 				59FFFC3E27583D3E00E1CD7A /* trollface-smile.mp3 in Resources */,
 				59EFC8BA275A58E500E29408 /* donald-trump-wrong-sound-effect.mp3 in Resources */,
 				5922BBE7275556600029079E /* LaunchScreen.storyboard in Resources */,
