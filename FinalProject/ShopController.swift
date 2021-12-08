@@ -5,8 +5,9 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let unlockables: [UIImage] = [UIImage(named: "Default4")!, UIImage(named: "Carl4")!, UIImage(named: "Dwayne4")!, UIImage(named: "Imposter4")!, UIImage(named: "DripSeaver4")!]
     let names: [String] = ["The Stickman", "The... Ya Know...", "The Rock", "The Sussy Baka", "The Legend"]
     let prices: [String] = ["0 DABLOONS™", "100 DABLOONS™", "250 DABLOONS™", "500 DABLOONS™", "2500 DABLOONS™"]
-    let x: [Int] = [0, 100, 250, 500, 2500]
+    var x: [Int] = [0, 100, 250, 500, 2500]
     let shawty = [0, 1, 2, 3, 4]
+    var current: [Int] = [0]
     var purchased : [Bool] = [false, false, false, false, false] //change to true if user buys character?
     let character = MasterClass.init()
     
@@ -20,10 +21,17 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         collectionViewOutlet.delegate = self
         collectionViewOutlet.dataSource = self
-        let x = CAGradientLayer()
-        x.frame = self.view.bounds
-        x.colors = [UIColor.green.cgColor, UIColor.systemYellow.cgColor]
-        self.view.layer.insertSublayer(x, at: 0)
+        let z = CAGradientLayer()
+        z.frame = self.view.bounds
+        z.colors = [UIColor.green.cgColor, UIColor.systemYellow.cgColor]
+        self.view.layer.insertSublayer(z, at: 0)
+        
+        if let money = UserDefaults.standard.data(forKey: "Money"){
+            let decoder = JSONDecoder()
+            if let decoded = try? decoder.decode([Int].self, from: money){
+               x = decoded
+            }
+    }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,6 +42,10 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CustomCell
         cell.configure(first: names[indexPath.row], picture: unlockables[indexPath.row], second: prices[indexPath.row])
         cell.layer.borderWidth = 1
+        if(purchased[indexPath.row] == true){
+            cell.labelOutlet.text = "Unlocked"
+            cell.labelOutletTwo.isHidden = true
+        }
         return cell
     }
     
@@ -56,6 +68,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                let sound = Bundle.main.path(forResource: "mr-krabs", ofType: "mp3")!
                let url = URL(fileURLWithPath: sound)
                 character.changeCurrency(subtract: x[indexPath.row])
+                current.append(character.returnCurrency())
                 updateLabel()
                do{
                    audioPlayer = try AVAudioPlayer(contentsOf: url)
@@ -68,6 +81,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                //Change label in customcell somehow
                
             } else{
+                current.append(character.returnCurrency())
                 let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
                 let ouch = UIAlertAction(title: "D;", style: .default, handler: nil)
                 lmao.addAction(ouch)
@@ -92,9 +106,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
             alert.addAction(yes)
             present(alert, animated: true, completion: nil)
         }
+        collectionView.reloadData()
     }
 
     func updateLabel(){
         counterLabel.text = "\(character.returnCurrency()) DABLOONS™"
     }
+
 }
