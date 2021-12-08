@@ -1,7 +1,6 @@
 import UIKit
 import AVFoundation
 class GameController: UIViewController {
-
     
     @IBOutlet weak var aoutlet: UIButton!
     @IBOutlet weak var boutlet: UIButton!
@@ -61,11 +60,6 @@ class GameController: UIViewController {
         UIImage(named: "Imposter4")!
     ]
     
-    
-    
-    
-    
-    
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var guessLabel: UILabel!
     
@@ -81,14 +75,12 @@ class GameController: UIViewController {
        var correct = 0
        //var inString = ""
 
-       
        override func viewDidLoad() {
            super.viewDidLoad()
            let x = CAGradientLayer()
            x.frame = self.view.bounds
            x.colors = [UIColor.lightGray.cgColor, UIColor.darkGray.cgColor]
            self.view.layer.insertSublayer(x, at: 0)
-           
            
            var num = Int.random(in: 0..<wordBank.count)
           // chosen = wordBank[num]
@@ -108,16 +100,7 @@ class GameController: UIViewController {
            }
            
          guessLabel.text = setup
-           
-           
-           
-           
        }
-       
-    
-       
-    
-       
        
        @IBAction func abutton(_ sender: UIButton) {
            print("hello")
@@ -144,10 +127,6 @@ class GameController: UIViewController {
            }
        }
        
-    
-    
-    
-    
        @IBAction func bbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
@@ -171,7 +150,6 @@ class GameController: UIViewController {
            }
        }
        
-       
        @IBAction func cbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
@@ -192,10 +170,8 @@ class GameController: UIViewController {
                coutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func dbutton(_ sender: Any) {
            var col  = false
@@ -217,10 +193,8 @@ class GameController: UIViewController {
                doutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func ebuttton(_ sender: Any) {
            var col  = false
@@ -242,11 +216,9 @@ class GameController: UIViewController {
                eoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
     
-       
        @IBAction func fbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
@@ -267,10 +239,8 @@ class GameController: UIViewController {
                foutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func gbutton(_ sender: Any) {
            var col  = false
@@ -292,10 +262,8 @@ class GameController: UIViewController {
                goutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func hbutton(_ sender: Any) {
            var col  = false
@@ -318,10 +286,8 @@ class GameController: UIViewController {
                houtlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func ibutton(_ sender: Any) {
            var col  = false
@@ -343,10 +309,8 @@ class GameController: UIViewController {
                ioutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-    
        
        @IBAction func jbuttonj(_ sender: Any) {
            var col  = false
@@ -368,7 +332,6 @@ class GameController: UIViewController {
                joutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -392,7 +355,6 @@ class GameController: UIViewController {
                koutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -416,7 +378,6 @@ class GameController: UIViewController {
                loutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -440,10 +401,8 @@ class GameController: UIViewController {
                moulet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func nbutton(_ sender: Any) {
            var col  = false
@@ -465,11 +424,9 @@ class GameController: UIViewController {
                noutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
     
-       
        @IBAction func obutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
@@ -490,7 +447,6 @@ class GameController: UIViewController {
                ooutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -514,7 +470,6 @@ class GameController: UIViewController {
                poutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -538,7 +493,6 @@ class GameController: UIViewController {
                qoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -562,10 +516,8 @@ class GameController: UIViewController {
                routlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func sbutton(_ sender: Any) {
            var col  = false
@@ -587,10 +539,8 @@ class GameController: UIViewController {
                soutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func tbutton(_ sender: Any) {
            var col  = false
@@ -612,7 +562,6 @@ class GameController: UIViewController {
                toutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -636,11 +585,8 @@ class GameController: UIViewController {
                uoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
-       
        
        @IBAction func vbutton(_ sender: Any) {
            var col  = false
@@ -662,10 +608,8 @@ class GameController: UIViewController {
                voulet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func wbutton(_ sender: Any) {
            var col  = false
@@ -687,10 +631,8 @@ class GameController: UIViewController {
                woutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func xbutton(_ sender: Any) {
            var col  = false
@@ -712,7 +654,6 @@ class GameController: UIViewController {
                xoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
        
@@ -736,10 +677,8 @@ class GameController: UIViewController {
                youtlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
        
        @IBAction func zbutton(_ sender: Any) {
            var col  = false
@@ -761,11 +700,8 @@ class GameController: UIViewController {
                zoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
                changePerson(wrongg: wrong)
-
            }
        }
-       
-       
        
       //=======================functions==========================================
       
@@ -775,11 +711,8 @@ class GameController: UIViewController {
              special.append(character)
            }
        }
-       
-       
-       
+    
        func updateGuess(guess: Character, spot: Int){
-           
            var x = 0
            var inString = ""
            
@@ -796,10 +729,7 @@ class GameController: UIViewController {
        
        }
            
-           
-           
     func changePerson(wrongg: Int){
-        
         var hello = bruh.returnCharr()
         var imagee = defaultImage[wrongg - 1]
         
@@ -817,21 +747,8 @@ class GameController: UIViewController {
             personImage.image = imagee
             
         default:
-            personImage.image = imagee
-
-            
-            
-            
-            
-            
+            print("Some other character")
         }
-       
-        
-        
-        
-        
-        
-        
     }
            
     func trumpMoment(){
@@ -855,29 +772,4 @@ class GameController: UIViewController {
             print("error")
         }
     }
-    
-    
-    func winningThing(){
-        
-        
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-           
-           
-       }
-       
-       
-       
-       
-
+}
