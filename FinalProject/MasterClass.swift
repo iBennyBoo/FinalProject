@@ -3,7 +3,11 @@ import UIKit
 public class MasterClass{
     var currency : Int = 100
     var wordbank : [String] = [] //put all words here?
-    var character: Int = 1
+    var character: Int = 0
+    
+    
+    
+    
     
     func updateCurrency(count: Int){
         currency += 10 * count
@@ -17,6 +21,10 @@ public class MasterClass{
     
     func returnCurrency() -> Int{
         return currency
+    }
+    
+    func returnCharr() -> Int{
+        return character
     }
     
     func changeCharacter(new: Int){

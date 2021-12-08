@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 class GameController: UIViewController {
 
     
@@ -29,15 +30,43 @@ class GameController: UIViewController {
     @IBOutlet weak var youtlet: UIButton!
     @IBOutlet weak var zoutlet: UIButton!
     
+    let bruh = MasterClass.init()
+    var audioPlayer: AVAudioPlayer?
+    
+    var defaultImage: [UIImage] = [
+        UIImage(named: "Default1")!,
+        UIImage(named: "Default2")!,
+        UIImage(named: "Default3")!,
+        UIImage(named: "Default4")!
+    ]
+    
+    var carlImage: [UIImage] = [
+        UIImage(named: "Carl1")!,
+        UIImage(named: "Carl2")!,
+        UIImage(named: "Carl3")!,
+        UIImage(named: "Carl4")!
+    ]
+    
+    var dripSeaver: [UIImage] = [
+        UIImage(named: "DripSeaver1")!,
+        UIImage(named: "DripSeaver2")!,
+        UIImage(named: "DripSeaver3")!,
+        UIImage(named: "DripSeaver4")!
+    ]
+    
+    var imposter: [UIImage] = [
+        UIImage(named: "Imposter1")!,
+        UIImage(named: "Imposter2")!,
+        UIImage(named: "Imposter3")!,
+        UIImage(named: "Imposter4")!
+    ]
     
     
     
     
     
     
-    
-    
-    
+    @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var guessLabel: UILabel!
     
     var wordBank = ["lake","central","south","seaver","squirrel", "crystal","school","downtown","cottage","veterans", "amelia","ben","fourteen","canes","illinois","tigers", "football","clubs","community","chicago","orange","jason","parade","raue","firework"]
@@ -103,11 +132,13 @@ class GameController: UIViewController {
            if col == true{
                aoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               daBabyMoment()
     
            }
            else{
                aoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               trumpMoment()
            }
        }
        
@@ -132,6 +163,7 @@ class GameController: UIViewController {
            else{
                boutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
            }
        }
        
@@ -153,6 +185,8 @@ class GameController: UIViewController {
            else{
                coutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -174,6 +208,8 @@ class GameController: UIViewController {
            else{
                doutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -195,6 +231,8 @@ class GameController: UIViewController {
            else{
                eoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
     
@@ -216,6 +254,8 @@ class GameController: UIViewController {
            else{
                foutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -237,6 +277,8 @@ class GameController: UIViewController {
            else{
                goutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -259,6 +301,8 @@ class GameController: UIViewController {
            else{
                houtlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -280,6 +324,8 @@ class GameController: UIViewController {
            else{
                ioutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
     
@@ -301,6 +347,8 @@ class GameController: UIViewController {
            else{
                joutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -321,6 +369,8 @@ class GameController: UIViewController {
            else{
                koutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -341,6 +391,8 @@ class GameController: UIViewController {
            else{
                loutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -361,6 +413,8 @@ class GameController: UIViewController {
            else{
                moulet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -382,6 +436,8 @@ class GameController: UIViewController {
            else{
                noutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
     
@@ -403,6 +459,8 @@ class GameController: UIViewController {
            else{
                ooutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -423,6 +481,8 @@ class GameController: UIViewController {
            else{
                poutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -443,6 +503,8 @@ class GameController: UIViewController {
            else{
                qoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -463,6 +525,8 @@ class GameController: UIViewController {
            else{
                routlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -484,6 +548,8 @@ class GameController: UIViewController {
            else{
                soutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -505,6 +571,8 @@ class GameController: UIViewController {
            else{
                toutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -525,6 +593,8 @@ class GameController: UIViewController {
            else{
                uoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -547,6 +617,8 @@ class GameController: UIViewController {
            else{
                voulet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -568,6 +640,8 @@ class GameController: UIViewController {
            else{
                woutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -589,6 +663,8 @@ class GameController: UIViewController {
            else{
                xoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -609,6 +685,8 @@ class GameController: UIViewController {
            else{
                youtlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -630,6 +708,8 @@ class GameController: UIViewController {
            else{
                zoutlet.backgroundColor = UIColor.red
                wrong = wrong + 1
+               changePerson(wrongg: wrong)
+
            }
        }
        
@@ -666,9 +746,37 @@ class GameController: UIViewController {
            
            
            
-    func changePerson(wrong: Int){
+    func changePerson(wrongg: Int){
         
+        var hello = bruh.returnCharr()
+        var imagee = defaultImage[wrongg - 1]
         
+        switch hello {
+            
+        case 0:
+        personImage.image = imagee
+            
+        
+        case 1:
+            print("The last letter of the alphabet")
+        case 2:
+            print("The last letter of the alphabet")
+
+        case 3:
+            print("The last letter of the alphabet")
+            
+        case 4:
+            print("g")
+
+        default:
+            print("Some other character")
+            
+            
+            
+            
+            
+        }
+       
         
         
         
@@ -677,9 +785,27 @@ class GameController: UIViewController {
         
     }
            
-           
+    func trumpMoment(){
+        let sound = Bundle.main.path(forResource: "donald-trump-wrong-sound-effect", ofType: "mp3")!
+        let url = URL(fileURLWithPath: sound)
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch{
+            print("error")
+        }
+    }
           
-    
+    func daBabyMoment(){
+        let sound = Bundle.main.path(forResource: "DA BABY LET'S GO - Sound Effect", ofType: "mp3")!
+        let url = URL(fileURLWithPath: sound)
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch{
+            print("error")
+        }
+    }
     
     
     

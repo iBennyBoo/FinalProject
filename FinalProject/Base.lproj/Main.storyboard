@@ -460,7 +460,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default4" translatesAutoresizingMaskIntoConstraints="NO" id="lPo-gL-M8E">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPo-gL-M8E">
                                 <rect key="frame" x="185" y="300" width="101" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -486,6 +486,7 @@
                         <outlet property="moulet" destination="Awr-Y1-fOh" id="PHJ-b1-9c1"/>
                         <outlet property="noutlet" destination="67C-Uj-YWv" id="DFs-jf-2E6"/>
                         <outlet property="ooutlet" destination="TIn-1J-DAJ" id="yKG-x4-bNY"/>
+                        <outlet property="personImage" destination="lPo-gL-M8E" id="gqu-m3-dKS"/>
                         <outlet property="poutlet" destination="a6h-E1-F1U" id="J87-jo-W0s"/>
                         <outlet property="qoutlet" destination="dKk-sJ-N0P" id="LqV-Yo-DKN"/>
                         <outlet property="routlet" destination="2G5-5a-auw" id="KNN-Pu-ydT"/>
@@ -672,7 +673,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default4" width="350" height="772"/>
         <image name="betterDoge" width="1280" height="1280"/>
         <image name="buffDoge" width="1538" height="2085"/>
         <image name="dollarsign.square" catalog="system" width="128" height="114"/>
