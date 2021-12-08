@@ -78,6 +78,7 @@ class GameController: UIViewController {
        var theSpot = 0
        var put = [String]()
        var wrong = 0
+       var correct = 0
        //var inString = ""
 
        
@@ -133,6 +134,7 @@ class GameController: UIViewController {
                aoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
                daBabyMoment()
+               correct = correct + 1
     
            }
            else{
@@ -159,6 +161,8 @@ class GameController: UIViewController {
            if col == true{
                boutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                boutlet.backgroundColor = UIColor.red
@@ -181,6 +185,8 @@ class GameController: UIViewController {
            if col == true{
                coutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                coutlet.backgroundColor = UIColor.red
@@ -204,6 +210,8 @@ class GameController: UIViewController {
            if col == true{
                doutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                doutlet.backgroundColor = UIColor.red
@@ -227,6 +235,8 @@ class GameController: UIViewController {
            if col == true{
                eoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                eoutlet.backgroundColor = UIColor.red
@@ -250,6 +260,8 @@ class GameController: UIViewController {
            if col == true{
                foutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                foutlet.backgroundColor = UIColor.red
@@ -273,6 +285,8 @@ class GameController: UIViewController {
            if col == true{
                goutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                goutlet.backgroundColor = UIColor.red
@@ -297,6 +311,8 @@ class GameController: UIViewController {
            if col == true{
                houtlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                houtlet.backgroundColor = UIColor.red
@@ -320,6 +336,8 @@ class GameController: UIViewController {
            if col == true{
                ioutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                ioutlet.backgroundColor = UIColor.red
@@ -343,6 +361,8 @@ class GameController: UIViewController {
            if col == true{
                joutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                joutlet.backgroundColor = UIColor.red
@@ -365,6 +385,8 @@ class GameController: UIViewController {
            if col == true{
                koutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                koutlet.backgroundColor = UIColor.red
@@ -387,6 +409,8 @@ class GameController: UIViewController {
            if col == true{
                loutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                loutlet.backgroundColor = UIColor.red
@@ -409,6 +433,8 @@ class GameController: UIViewController {
            if col == true{
                moulet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                moulet.backgroundColor = UIColor.red
@@ -432,6 +458,8 @@ class GameController: UIViewController {
            if col == true{
                noutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                noutlet.backgroundColor = UIColor.red
@@ -455,6 +483,8 @@ class GameController: UIViewController {
            if col == true{
                ooutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                ooutlet.backgroundColor = UIColor.red
@@ -477,6 +507,8 @@ class GameController: UIViewController {
            if col == true{
                poutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                poutlet.backgroundColor = UIColor.red
@@ -499,6 +531,8 @@ class GameController: UIViewController {
            if col == true{
                qoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                qoutlet.backgroundColor = UIColor.red
@@ -521,6 +555,8 @@ class GameController: UIViewController {
            if col == true{
                routlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                routlet.backgroundColor = UIColor.red
@@ -544,6 +580,8 @@ class GameController: UIViewController {
            if col == true{
                soutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                soutlet.backgroundColor = UIColor.red
@@ -567,6 +605,8 @@ class GameController: UIViewController {
            if col == true{
                toutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                toutlet.backgroundColor = UIColor.red
@@ -589,6 +629,8 @@ class GameController: UIViewController {
            if col == true{
                uoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                uoutlet.backgroundColor = UIColor.red
@@ -613,6 +655,8 @@ class GameController: UIViewController {
            if col == true{
                voulet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                voulet.backgroundColor = UIColor.red
@@ -636,6 +680,8 @@ class GameController: UIViewController {
            if col == true{
                woutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                woutlet.backgroundColor = UIColor.red
@@ -659,6 +705,8 @@ class GameController: UIViewController {
            if col == true{
                xoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                xoutlet.backgroundColor = UIColor.red
@@ -681,6 +729,8 @@ class GameController: UIViewController {
            if col == true{
                youtlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                youtlet.backgroundColor = UIColor.red
@@ -704,6 +754,8 @@ class GameController: UIViewController {
            if col == true{
                zoutlet.backgroundColor = UIColor.green
                guesses = guesses + 1
+               correct = correct + 1
+
            }
            else{
                zoutlet.backgroundColor = UIColor.red
@@ -806,6 +858,7 @@ class GameController: UIViewController {
     
     
     func winningThing(){
+        
         
         
         
