@@ -7,7 +7,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let prices: [String] = ["0 DABLOONS™", "100 DABLOONS™", "250 DABLOONS™", "500 DABLOONS™", "2500 DABLOONS™"]
     var x: [Int] = [0, 100, 250, 500, 2500]
     let shawty = [0, 1, 2, 3, 4]
-    var current: [Int] = [0]
+    var options: [CustomCell] = []
     var purchased : [Bool] = [false, false, false, false, false] //change to true if user buys character?
     let character = MasterClass.init()
     
@@ -19,6 +19,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateLabel()
         collectionViewOutlet.delegate = self
         collectionViewOutlet.dataSource = self
         let z = CAGradientLayer()
@@ -35,6 +36,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        updateLabel()
         return unlockables.count
     }
     
@@ -43,9 +45,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.configure(first: names[indexPath.row], picture: unlockables[indexPath.row], second: prices[indexPath.row])
         cell.layer.borderWidth = 1
         if(purchased[indexPath.row] == true){
-            cell.labelOutlet.text = "Unlocked"
-            cell.labelOutletTwo.isHidden = true
+            cell.boughtCharacter()
+            cell.backgroundColor = UIColor.systemTeal
+            collectionView.reloadData()
         }
+        collectionView.reloadData()
         return cell
     }
     
@@ -68,8 +72,12 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                let sound = Bundle.main.path(forResource: "mr-krabs", ofType: "mp3")!
                let url = URL(fileURLWithPath: sound)
                 character.changeCurrency(subtract: x[indexPath.row])
-                current.append(character.returnCurrency())
+                // Persistence \\
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(character.returnCurrency()){
+                    UserDefaults.standard.set(encoded, forKey: "Money")
                 updateLabel()
+                // Audio \\
                do{
                    audioPlayer = try AVAudioPlayer(contentsOf: url)
                    audioPlayer?.play()
@@ -78,16 +86,14 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                }
                collectionView.cellForItem(at: indexPath)?.layer.backgroundColor = color.cgColor
                 purchased[indexPath.row] = true
-               //Change label in customcell somehow
                
             } else{
-                current.append(character.returnCurrency())
                 let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
                 let ouch = UIAlertAction(title: "D;", style: .default, handler: nil)
                 lmao.addAction(ouch)
                 present(lmao, animated: true, completion: nil)
             }
-            
+            }
         })
         alert.addAction(no)
         alert.addAction(yes)

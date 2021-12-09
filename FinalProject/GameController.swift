@@ -704,7 +704,14 @@ class GameController: UIViewController {
        }
        
       //=======================functions==========================================
-      
+    func alertMoment(){
+        bruh.changeCharacter(new: chosen.count)
+        let epic = UIAlertController(title: "You Got the Word Right!", message: "You Earned \(bruh.changeCharacter(new: chosen.count)) DABLOONS™!", preferredStyle: .alert)
+        let gamer = UIAlertAction(title: "Thanks Puff Daddy", style: .default, handler: nil)
+        epic.addAction(gamer)
+        present(epic, animated: true, completion: nil)
+    }
+    
        func makeArray(wow: String){
        
            for character in wow{

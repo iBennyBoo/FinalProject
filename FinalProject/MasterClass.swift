@@ -1,12 +1,9 @@
 import Foundation
 import UIKit
 public class MasterClass{
-    var currency : Int = 0
+    var currency : Int = 150
     var character: Int = 0
-    
-    
-    
-    
+    var current: Int = 0
     
     func updateCurrency(count: Int){
         currency += 10 * count
