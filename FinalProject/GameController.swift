@@ -769,6 +769,66 @@ class GameController: UIViewController {
         }
     }
           
+    func resetScreen(){
+       
+        var num = Int.random(in: 0..<wordBank.count)
+        chosen = wordBank[num]
+        wrong = 0
+        correct = 0
+        guesses = 0
+        
+        var t = 0
+        while t < special.count{
+            put.append(" _ ")
+            t = t + 1
+        }
+        
+        var setup = ""
+        var o = 0
+        while o < put.count{
+        setup = setup + put[o]
+        o = o + 1
+        }
+        
+        aoutlet.backgroundColor = UIColor.white
+        boutlet.backgroundColor = UIColor.white
+        coutlet.backgroundColor = UIColor.white
+        doutlet.backgroundColor = UIColor.white
+        eoutlet.backgroundColor = UIColor.white
+        foutlet.backgroundColor = UIColor.white
+        goutlet.backgroundColor = UIColor.white
+        houtlet.backgroundColor = UIColor.white
+        ioutlet.backgroundColor = UIColor.white
+        joutlet.backgroundColor = UIColor.white
+        koutlet.backgroundColor = UIColor.white
+        loutlet.backgroundColor = UIColor.white
+        moulet.backgroundColor = UIColor.white
+        noutlet.backgroundColor = UIColor.white
+        ooutlet.backgroundColor = UIColor.white
+        poutlet.backgroundColor = UIColor.white
+        qoutlet.backgroundColor = UIColor.white
+        routlet.backgroundColor = UIColor.white
+        soutlet.backgroundColor = UIColor.white
+        toutlet.backgroundColor = UIColor.white
+        uoutlet.backgroundColor = UIColor.white
+        voulet.backgroundColor = UIColor.white
+        woutlet.backgroundColor = UIColor.white
+        xoutlet.backgroundColor = UIColor.white
+        youtlet.backgroundColor = UIColor.white
+        zoutlet.backgroundColor = UIColor.white
+
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
     func daBabyMoment(){
         let sound = Bundle.main.path(forResource: "DA BABY LET'S GO - Sound Effect", ofType: "mp3")!
         let url = URL(fileURLWithPath: sound)
