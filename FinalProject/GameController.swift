@@ -28,6 +28,9 @@ class GameController: UIViewController {
     @IBOutlet weak var xoutlet: UIButton!
     @IBOutlet weak var youtlet: UIButton!
     @IBOutlet weak var zoutlet: UIButton!
+    @IBOutlet weak var dabloonLabel: UILabel!
+    
+    
     
     let bruh = MasterClass.init()
     var audioPlayer: AVAudioPlayer?
@@ -528,23 +531,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "s"{
-                  col = true
-                updateGuess(guess: "s", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "s"{
+           col = true
+           updateGuess(guess: "s", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               soutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           soutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               soutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           soutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -552,23 +554,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "t"{
-                  col = true
-                updateGuess(guess: "t", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "t"{
+           col = true
+           updateGuess(guess: "t", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               toutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           toutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               toutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           toutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -600,23 +601,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "v"{
-                  col = true
-                updateGuess(guess: "v", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "v"{
+           col = true
+           updateGuess(guess: "v", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               voulet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           voulet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               voulet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           voulet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -624,23 +624,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "w"{
-                  col = true
-                updateGuess(guess: "w", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "w"{
+           col = true
+           updateGuess(guess: "w", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               woutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           woutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               woutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           woutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -648,23 +647,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "x"{
-                  col = true
-                updateGuess(guess: "x", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "x"{
+           col = true
+           updateGuess(guess: "x", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               xoutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           xoutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               xoutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           xoutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -672,23 +670,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "y"{
-                  col = true
-                updateGuess(guess: "y", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "y"{
+           col = true
+           updateGuess(guess: "y", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               youtlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           youtlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               youtlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           youtlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -696,23 +693,22 @@ class GameController: UIViewController {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "z"{
-                  col = true
-                updateGuess(guess: "z", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "z"{
+           col = true
+           updateGuess(guess: "z", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               zoutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           zoutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               zoutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           zoutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
        }
        
@@ -720,11 +716,13 @@ class GameController: UIViewController {
       
     //winning alert
     func alertMoment(){
-        bruh.changeCharacter(new: chosen.count)
-        let epic = UIAlertController(title: "You Got the Word Right!", message: "You Earned \(bruh.changeCharacter(new: chosen.count)) DABLOONS™!", preferredStyle: .alert)
+        bruh.updateCurrency(count: chosen.count)
+        let epic = UIAlertController(title: "You Got the Word Right!", message: "You've Earned \(bruh.returnUpdatedCurrency(count: chosen.count)) DABLOONS™" , preferredStyle: .alert)
         let gamer = UIAlertAction(title: "Thanks Puff Daddy", style: .default, handler: nil)
         epic.addAction(gamer)
         present(epic, animated: true, completion: nil)
+        dabloonLabel.text = "\(bruh.returnCurrency()) DABLOONS™"
+        
         resetScreen()
         }
     
@@ -744,6 +742,7 @@ class GameController: UIViewController {
            var x = 0
            var inString = ""
            correct = correct + 1
+           print(spot)
            put.remove(at:spot)
            put.insert(String(guess), at: spot)
            while x < put.count{
@@ -789,7 +788,6 @@ class GameController: UIViewController {
     //reseting screen, wip!
     func resetScreen(){
         var num = Int.random(in: 0..<wordBank.count)
-        var g = 0
         special.removeAll()
         chosen = "hello"
         makeArray(wow: chosen)
@@ -797,7 +795,7 @@ class GameController: UIViewController {
         correct = 0
         guesses = 0
         var t = 0
-        put = [""]
+        put.removeAll()
         while t < special.count{
         put.append(" _ ")
         t = t + 1
@@ -810,7 +808,7 @@ class GameController: UIViewController {
         }
         guessLabel.text = setup
         personImage.image = UIImage(named: "blank")
-        aoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
+        aoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 0.5)
         boutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
         coutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
         doutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)

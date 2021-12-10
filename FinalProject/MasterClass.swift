@@ -13,6 +13,10 @@ public class MasterClass{
         //update Labels?
     }
     
+    func returnUpdatedCurrency(count: Int) -> Int{
+        return 10 * count
+    }
+    
     func changeCurrency(subtract: Int){
         currency = currency - subtract
         //update Labels
@@ -33,4 +37,6 @@ public class MasterClass{
     func returnCharacter() -> Int{
         return character
     }
+    
+    
 }

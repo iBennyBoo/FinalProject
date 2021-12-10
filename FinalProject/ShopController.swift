@@ -34,6 +34,12 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("view appearing")
+        updateLabel()
+        collectionViewOutlet.reloadData()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return unlockables.count
     }

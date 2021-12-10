@@ -464,6 +464,13 @@
                                 <rect key="frame" x="37" y="259" width="300" height="310"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 DABLOONS™" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOR-pG-Zju">
+                                <rect key="frame" x="16" y="32" width="286" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rbb-U2-lOZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -483,6 +490,7 @@
                         <outlet property="aoutlet" destination="KyO-uN-Zhw" id="PZi-em-enR"/>
                         <outlet property="boutlet" destination="hC5-05-lFO" id="1rh-0j-dTG"/>
                         <outlet property="coutlet" destination="buZ-en-L4L" id="Pjq-re-2ra"/>
+                        <outlet property="dabloonLabel" destination="DOR-pG-Zju" id="vAQ-EX-GNO"/>
                         <outlet property="doutlet" destination="utv-4c-cbD" id="7Td-mi-7FM"/>
                         <outlet property="eoutlet" destination="gda-Hn-3SK" id="pPf-2P-fPM"/>
                         <outlet property="foutlet" destination="AQW-Nx-Xr2" id="rAQ-ic-a2f"/>
