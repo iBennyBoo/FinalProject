@@ -41,6 +41,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionViewOutlet.reloadData()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        print("view disappearing")
+        character.updateCurrency(count: 0)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         updateLabel()
         return unlockables.count
@@ -52,7 +57,6 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.layer.borderWidth = 1
         if(purchased[indexPath.row] == true){
             cell.boughtCharacter()
-            cell.backgroundColor = UIColor.systemTeal
             collectionView.reloadData()
         }
         collectionView.reloadData()
@@ -65,11 +69,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        updateLabel()
+        print("working?")
         if(purchased[indexPath.row] == false){
         let alert = UIAlertController(title: "Selected \(names[indexPath.row])", message: "Are You Sure You Want To Purchase This Item?", preferredStyle: .alert)
         let no = UIAlertAction(title: "Negative", style: .default, handler: nil)
-        let yes = UIAlertAction(title: "Affirmative", style: .default, handler: { [self] action in
+            let yes = UIAlertAction(title: "Affirmative", style: .default, handler: { [self] action in
             if(character.returnCurrency() >= x[indexPath.row]){
                 let success = UIAlertController(title: "Purchase Successful!", message: "Congratulations Unlocking \(names[indexPath.row]).", preferredStyle: .alert)
                 let epic = UIAlertAction(title: "Obama Moment", style: .default, handler: nil)
@@ -82,6 +86,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let encoder = JSONEncoder()
                 if let encoded = try? encoder.encode(character.returnCurrency()){
                     UserDefaults.standard.set(encoded, forKey: "Money")
+                }
                 updateLabel()
                 // Audio \\
                do{
@@ -99,8 +104,8 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 lmao.addAction(ouch)
                 present(lmao, animated: true, completion: nil)
             }
-            }
-        })
+            })
+        
         alert.addAction(no)
         alert.addAction(yes)
         present(alert, animated: true, completion: nil)

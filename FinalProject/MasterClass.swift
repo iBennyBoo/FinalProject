@@ -1,12 +1,13 @@
 import Foundation
 import UIKit
 public class MasterClass{
-    var currency : Int = 150
+    var currency : Int = 0
     var character: Int = 0
     var current: Int = 0
     
     func updateCurrency(count: Int){
         currency += 10 * count
+        print("updated: \(currency)")
         //update Labels?
     }
     
@@ -16,10 +17,12 @@ public class MasterClass{
     
     func changeCurrency(subtract: Int){
         currency = currency - subtract
+        print("changed: \(currency)")
         //update Labels
     }
     
     func returnCurrency() -> Int{
+        print("returned: \(currency)")
         return currency
     }
     
