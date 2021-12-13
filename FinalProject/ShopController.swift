@@ -27,22 +27,20 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         z.colors = [UIColor.green.cgColor, UIColor.systemYellow.cgColor]
         self.view.layer.insertSublayer(z, at: 0)
         
-        if let money = UserDefaults.standard.data(forKey: "Money"){
-            let decoder = JSONDecoder()
-            if let decoded = try? decoder.decode([Int].self, from: money){
-               x = decoded
-            }
-    }
+//        if let money = UserDefaults.standard.data(forKey: "Money"){
+//            let decoder = JSONDecoder()
+//            if let decoded = try? decoder.decode([Int].self, from: money){
+//               x = decoded
+//            }
+//    }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("view appearing")
         updateLabel()
         collectionViewOutlet.reloadData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("view disappearing")
         character.updateCurrency(count: 0)
     }
     
@@ -57,7 +55,6 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.layer.borderWidth = 1
         if(purchased[indexPath.row] == true){
             cell.boughtCharacter()
-            collectionView.reloadData()
         }
         collectionView.reloadData()
         return cell
@@ -82,11 +79,12 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                let sound = Bundle.main.path(forResource: "mr-krabs", ofType: "mp3")!
                let url = URL(fileURLWithPath: sound)
                 character.changeCurrency(subtract: x[indexPath.row])
+                character.changeCharacter(new: shawty[indexPath.row])
                 // Persistence \\
-                let encoder = JSONEncoder()
-                if let encoded = try? encoder.encode(character.returnCurrency()){
-                    UserDefaults.standard.set(encoded, forKey: "Money")
-                }
+//                let encoder = JSONEncoder()
+//                if let encoded = try? encoder.encode(character.returnCurrency()){
+//                    UserDefaults.standard.set(encoded, forKey: "Money")
+//                }
                 updateLabel()
                 // Audio \\
                do{

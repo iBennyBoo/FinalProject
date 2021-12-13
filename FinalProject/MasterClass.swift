@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 public class MasterClass{
     static var currency : Int = 0
-    var character: Int = 0
+    static var character: Int = 0
     var current: Int = 0
     
     func updateCurrency(count: Int){
@@ -26,16 +26,13 @@ public class MasterClass{
         return MasterClass.currency
     }
     
-    func returnCharr() -> Int{
-        return character
+    func changeCharacter(new: Int){
+        MasterClass.character = new
     }
     
-    func changeCharacter(new: Int){
-        character = new
-    }
     
     func returnCharacter() -> Int{
-        return character
+        return MasterClass.character
     }
     
     
