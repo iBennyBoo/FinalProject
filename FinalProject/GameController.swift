@@ -49,6 +49,14 @@ class GameController: UIViewController {
         UIImage(named: "Carl4")!
     ]
     
+    var rockImage: [UIImage] = [
+        UIImage(named: "Dwayne1")!,
+        UIImage(named: "Dwayne2")!,
+        UIImage(named: "Dwayne3")!,
+        UIImage(named: "Dwayne4")!
+    ]
+    
+    
     var dripSeaver: [UIImage] = [
         UIImage(named: "DripSeaver1")!,
         UIImage(named: "DripSeaver2")!,
@@ -826,19 +834,25 @@ class GameController: UIViewController {
     
     //changing person
     func changePerson(wrongg: Int){
-        var hello = bruh.returnCharr()
-        var imagee = defaultImage[wrongg - 1]
+        var hello = MasterClass.character
+        print(MasterClass.character)
+        print("printed var")
         switch hello {
         case 0:
+        var imagee = defaultImage[wrongg - 1]
         personImage.image = imagee
         case 1:
-        personImage.image = imagee
+        var imageee = carlImage[wrongg - 1]
+        personImage.image = imageee
         case 2:
-        personImage.image = imagee
+        var imageeee = rockImage[wrongg - 1]
+        personImage.image = imageeee
         case 3:
-        personImage.image = imagee
+        var imagq = imposter[wrongg - 1]
+        personImage.image = imagq
         case 4:
-        personImage.image = imagee
+        var imagi = dripSeaver[wrongg - 1]
+        personImage.image = imagi
         default:
         print("Some other character")
         }
