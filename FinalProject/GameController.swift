@@ -128,6 +128,8 @@ class GameController: UIViewController {
            wrong = wrong + 1
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func bbutton(_ sender: Any) {
@@ -151,6 +153,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func cbutton(_ sender: Any) {
@@ -174,6 +178,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func dbutton(_ sender: Any) {
@@ -197,81 +203,83 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func ebuttton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "e"{
-                  col = true
-                updateGuess(guess: "e", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "e"{
+           col = true
+           updateGuess(guess: "e", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               eoutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
-
+           eoutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               eoutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           eoutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
     
        @IBAction func fbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "f"{
-                  col = true
-                updateGuess(guess: "f", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "f"{
+           col = true
+           updateGuess(guess: "f", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               foutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
-
+           foutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               foutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           foutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func gbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "g"{
-                  col = true
-                updateGuess(guess: "g", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "g"{
+           col = true
+           updateGuess(guess: "g", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               goutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
-
+           goutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               goutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           goutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func hbutton(_ sender: Any) {
@@ -295,246 +303,258 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func ibutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "i"{
-                  col = true
-                updateGuess(guess: "i", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "i"{
+           col = true
+           updateGuess(guess: "i", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               ioutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           ioutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               ioutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           ioutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func jbuttonj(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "j"{
-                  col = true
-                updateGuess(guess: "j", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "j"{
+           col = true
+           updateGuess(guess: "j", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               joutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           joutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               joutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           joutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func kbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "k"{
-                  col = true
-                updateGuess(guess: "k", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "k"{
+           col = true
+           updateGuess(guess: "k", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               koutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           koutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               koutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           koutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func lbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "l"{
-                  col = true
-                updateGuess(guess: "l", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "l"{
+           col = true
+           updateGuess(guess: "l", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               loutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           loutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               loutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           loutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func mbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "m"{
-                  col = true
-                updateGuess(guess: "m", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "m"{
+           col = true
+           updateGuess(guess: "m", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               moulet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           moulet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               moulet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           moulet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func nbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "n"{
-                  col = true
-                updateGuess(guess: "n", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "n"{
+           col = true
+           updateGuess(guess: "n", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               noutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           noutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               noutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           noutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
     
        @IBAction func obutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "o"{
-                  col = true
-                updateGuess(guess: "o", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "o"{
+           col = true
+           updateGuess(guess: "o", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               ooutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           ooutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               ooutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           ooutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func pbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "p"{
-                  col = true
-                updateGuess(guess: "p", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "p"{
+           col = true
+           updateGuess(guess: "p", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               poutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           poutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               poutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           poutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func qbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "q"{
-                  col = true
-                updateGuess(guess: "q", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "q"{
+           col = true
+           updateGuess(guess: "q", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               qoutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           qoutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               qoutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           qoutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func rbutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "r"{
-                  col = true
-                updateGuess(guess: "r", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "r"{
+           col = true
+           updateGuess(guess: "r", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               routlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           routlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               routlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           routlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func sbutton(_ sender: Any) {
@@ -558,6 +578,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func tbutton(_ sender: Any) {
@@ -581,30 +603,33 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func ubutton(_ sender: Any) {
            var col  = false
            var loopAmt = 0
            for poo in special{
-               if poo == "u"{
-                  col = true
-                updateGuess(guess: "u", spot: loopAmt)
-               }
-               loopAmt = loopAmt + 1
+           if poo == "u"{
+           col = true
+           updateGuess(guess: "u", spot: loopAmt)
+           }
+           loopAmt = loopAmt + 1
            }
            if col == true{
-               uoutlet.backgroundColor = UIColor.green
-               guesses = guesses + 1
-               daBabyMoment()
-
+           uoutlet.backgroundColor = UIColor.green
+           guesses = guesses + 1
+           daBabyMoment()
            }
            else{
-               uoutlet.backgroundColor = UIColor.red
-               wrong = wrong + 1
-               changePerson(wrongg: wrong)
-               trumpMoment()
+           uoutlet.backgroundColor = UIColor.red
+           wrong = wrong + 1
+           changePerson(wrongg: wrong)
+           trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func vbutton(_ sender: Any) {
@@ -628,6 +653,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func wbutton(_ sender: Any) {
@@ -651,6 +678,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func xbutton(_ sender: Any) {
@@ -674,6 +703,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func ybutton(_ sender: Any) {
@@ -697,6 +728,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
        @IBAction func zbutton(_ sender: Any) {
@@ -720,6 +753,8 @@ class GameController: UIViewController {
            changePerson(wrongg: wrong)
            trumpMoment()
            }
+           callWin()
+           callLoss()
        }
        
       //=======================functions==========================================
@@ -734,6 +769,15 @@ class GameController: UIViewController {
         dabloonLabel.text = "\(bruh.returnCurrency()) DABLOONS™"
         resetScreen()
         }
+    
+    func otherAlertMoment(){
+        let epic = UIAlertController(title: "You Got the Word WRONG", message: "You've earned no DABLOONS™ :(" , preferredStyle: .alert)
+        let gamer = UIAlertAction(title: "Try again..? :////", style: .default, handler: nil)
+        epic.addAction(gamer)
+        present(epic, animated: true, completion: nil)
+        resetScreen()
+        }
+    
     
       //making array of characters
       
@@ -761,7 +805,6 @@ class GameController: UIViewController {
            }
            print(inString)
            guessLabel.text = inString
-           callWin()
        }
         
     //checking to see if there was a win
@@ -773,6 +816,13 @@ class GameController: UIViewController {
         alertMoment()
         }
     }
+    func callLoss(){
+        print("inside")
+        if wrong == 4{
+        otherAlertMoment()
+        }
+    }
+    
     
     //changing person
     func changePerson(wrongg: Int){
@@ -817,32 +867,33 @@ class GameController: UIViewController {
         }
         guessLabel.text = setup
         personImage.image = UIImage(named: "blank")
-        aoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 0.5)
-        boutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        coutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        doutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        eoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        foutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        goutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        houtlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        ioutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        joutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        koutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        loutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        moulet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        noutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        ooutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        poutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        qoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        routlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        soutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        toutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        uoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        voulet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        woutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        xoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        youtlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
-        zoutlet.backgroundColor = UIColor.init(red: 0.255, green: 0.216, blue: 0.250, alpha: 1)
+        var newColor = UIColor.init(red: 1, green: 0.846, blue: 0.979, alpha: 1)
+        aoutlet.backgroundColor = newColor
+        boutlet.backgroundColor = newColor
+        coutlet.backgroundColor = newColor
+        doutlet.backgroundColor = newColor
+        eoutlet.backgroundColor = newColor
+        foutlet.backgroundColor = newColor
+        goutlet.backgroundColor = newColor
+        houtlet.backgroundColor = newColor
+        ioutlet.backgroundColor = newColor
+        joutlet.backgroundColor = newColor
+        koutlet.backgroundColor = newColor
+        loutlet.backgroundColor = newColor
+        moulet.backgroundColor = newColor
+        noutlet.backgroundColor = newColor
+        ooutlet.backgroundColor = newColor
+        poutlet.backgroundColor = newColor
+        qoutlet.backgroundColor = newColor
+        routlet.backgroundColor = newColor
+        soutlet.backgroundColor = newColor
+        toutlet.backgroundColor = newColor
+        uoutlet.backgroundColor = newColor
+        voulet.backgroundColor = newColor
+        woutlet.backgroundColor = newColor
+        xoutlet.backgroundColor = newColor
+        youtlet.backgroundColor = newColor
+        zoutlet.backgroundColor = newColor
     }
     
     //sound functions
