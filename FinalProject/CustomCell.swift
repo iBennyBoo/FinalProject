@@ -17,7 +17,6 @@ public class CustomCell: UICollectionViewCell{
     }
     
     func boughtCharacter(){
-        labelOutlet.text = "Unlocked"
-        labelOutletTwo.isHidden = true
+        labelOutletTwo.text = "Unlocked"
     }
 }

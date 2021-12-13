@@ -78,6 +78,16 @@ class GameController: UIViewController {
        var correct = 0
        //var inString = ""
 
+    override func viewWillAppear(_ animated: Bool) {
+        print("view appearing")
+        dabloonLabel.text = "\(bruh.returnCurrency()) DABLOONS™"
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("view disappearing")
+        bruh.updateCurrency(count: 0)
+    }
+    
        override func viewDidLoad() {
        super.viewDidLoad()
            var num = Int.random(in: 0..<wordBank.count)
@@ -757,7 +767,6 @@ class GameController: UIViewController {
         epic.addAction(gamer)
         present(epic, animated: true, completion: nil)
         dabloonLabel.text = "\(bruh.returnCurrency()) DABLOONS™"
-        
         resetScreen()
         }
     
