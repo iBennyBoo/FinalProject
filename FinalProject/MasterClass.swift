@@ -26,10 +26,10 @@ public class MasterClass{
         return MasterClass.currency
     }
     
-    
     func changeCharacter(new: Int){
         MasterClass.character = new
     }
+    
     
     func returnCharacter() -> Int{
         return MasterClass.character
