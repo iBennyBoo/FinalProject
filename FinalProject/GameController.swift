@@ -77,7 +77,7 @@ class GameController: UIViewController {
     var wordBank = ["lake","central","south","seaver","squirrel", "crystal","school","downtown","cottage","veterans", "amelia","ben","fourteen","canes","illinois","tigers", "football","clubs","community","chicago","orange","jason","parade","raue","firework"]
     
        var special = [Character]()
-       var chosen = "hama"
+       var chosen = "final"
        var number = 0
        var guesses = 0
 
@@ -94,6 +94,10 @@ class GameController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         print("view disappearing")
         bruh.updateCurrency(count: 0)
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(bruh.returnCurrency()){
+            UserDefaults.standard.set(encoded, forKey: "Money3")
+    }
     }
     
        override func viewDidLoad() {
@@ -115,6 +119,13 @@ class GameController: UIViewController {
            o = o + 1
            }
            guessLabel.text = setup
+           
+           if let money = UserDefaults.standard.data(forKey: "Money3"){
+               let decoder = JSONDecoder()
+               if let decoded = try? decoder.decode(Int.self, from: money){
+                   bruh.saveData(saved: decoded)
+               }
+           }    
            }
        
        @IBAction func abutton(_ sender: UIButton) {

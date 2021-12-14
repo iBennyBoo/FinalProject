@@ -22,7 +22,6 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateLabel()
         collectionViewOutlet.delegate = self
         collectionViewOutlet.dataSource = self
         let z = CAGradientLayer()
@@ -30,12 +29,23 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         z.colors = [UIColor.green.cgColor, UIColor.systemYellow.cgColor]
         self.view.layer.insertSublayer(z, at: 0)
         
-//        if let money = UserDefaults.standard.data(forKey: "Money"){
-//            let decoder = JSONDecoder()
-//            if let decoded = try? decoder.decode([Int].self, from: money){
-//               x = decoded
-//            }
-//    }
+        if let money = UserDefaults.standard.data(forKey: "Money3"){
+            let decoder = JSONDecoder()
+            if let decoded = try? decoder.decode(Int.self, from: money){
+                print("working?")
+                character.saveData(saved: decoded)
+                print(character.returnCurrency())
+            }
+    }
+        if let bought = UserDefaults.standard.data(forKey: "Bought2"){
+            let decoder = JSONDecoder()
+            if let decoded = try? decoder.decode([Bool].self, from: bought){
+                print("working?")
+                purchased = decoded
+                print(purchased)
+            }
+    }
+        updateLabel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +59,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewWillDisappear(_ animated: Bool) {
         character.updateCurrency(count: 0)
         z = 0
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(character.returnCurrency()){
+            UserDefaults.standard.set(encoded, forKey: "Money3")
+            print("working?")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -88,10 +103,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 character.changeCurrency(subtract: x[indexPath.row])
                 character.changeCharacter(new: shawty[indexPath.row])
                 // Persistence \\
-//                let encoder = JSONEncoder()
-//                if let encoded = try? encoder.encode(character.returnCurrency()){
-//                    UserDefaults.standard.set(encoded, forKey: "Money")
-//                }
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(character.returnCurrency()){
+                    UserDefaults.standard.set(encoded, forKey: "Money3")
+                }
+                
                 updateLabel()
                 // Audio \\
                do{
@@ -102,6 +118,10 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                }
                collectionView.cellForItem(at: indexPath)?.layer.backgroundColor = color.cgColor
                 purchased[indexPath.row] = true
+                let encoder2 = JSONEncoder()
+                if let encoded = try? encoder2.encode(purchased){
+                    UserDefaults.standard.set(encoded, forKey: "Bought2")
+                }
                
             } else{
                 let lmao = UIAlertController(title: "Nah Dawg You Broke", message: "Guess More Words Correctly To Get DABLOONS™", preferredStyle: .alert)
