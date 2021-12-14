@@ -7,7 +7,6 @@ public class MasterClass{
     
     func updateCurrency(count: Int){
         MasterClass.currency += 10 * count
-        print("updated: \(MasterClass.currency)")
         //update Labels?
     }
     
@@ -17,12 +16,10 @@ public class MasterClass{
     
     func changeCurrency(subtract: Int){
         MasterClass.currency = MasterClass.currency - subtract
-        print("changed: \(MasterClass.currency)")
         //update Labels
     }
     
     func returnCurrency() -> Int{
-        print("returned: \(MasterClass.currency)")
         return MasterClass.currency
     }
     

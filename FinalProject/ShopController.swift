@@ -8,8 +8,11 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var x: [Int] = [0, 100, 250, 500, 2500]
     let shawty = [0, 1, 2, 3, 4]
     var options: [CustomCell] = []
-    var purchased : [Bool] = [false, false, false, false, false] //change to true if user buys character?
+    var purchased : [Bool] = [true, false, false, false, false]
     let character = MasterClass.init()
+    var z = 0
+    
+    //Save Dabloons and Bool Array!\\
     
     @IBOutlet weak var collectionViewOutlet: UICollectionView!
     @IBOutlet weak var counterLabel: UILabel!
@@ -36,12 +39,16 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if(z == 0){
         updateLabel()
         collectionViewOutlet.reloadData()
+            z = 2
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         character.updateCurrency(count: 0)
+        z = 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
