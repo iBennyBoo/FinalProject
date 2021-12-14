@@ -32,5 +32,7 @@ public class MasterClass{
         return MasterClass.character
     }
     
-    
+    func saveData(saved: Int){
+        MasterClass.currency = saved
+    }
 }

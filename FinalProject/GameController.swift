@@ -94,6 +94,10 @@ class GameController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         print("view disappearing")
         bruh.updateCurrency(count: 0)
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(bruh.returnCurrency()){
+            UserDefaults.standard.set(encoded, forKey: "Money")
+    }
     }
     
        override func viewDidLoad() {
@@ -113,6 +117,13 @@ class GameController: UIViewController {
            o = o + 1
            }
            guessLabel.text = setup
+           
+           if let money = UserDefaults.standard.data(forKey: "Money"){
+               let decoder = JSONDecoder()
+               if let decoded = try? decoder.decode(Int.self, from: money){
+                   bruh.saveData(saved: decoded)
+               }
+           }    
            }
        
        @IBAction func abutton(_ sender: UIButton) {
