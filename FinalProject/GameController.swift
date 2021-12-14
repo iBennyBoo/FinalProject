@@ -99,7 +99,9 @@ class GameController: UIViewController {
        override func viewDidLoad() {
        super.viewDidLoad()
            var num = Int.random(in: 0..<wordBank.count)
-          //chosen = wordBank[num]
+           chosen = wordBank[num]
+           print("this is the word")
+           print(chosen)
            makeArray(wow: chosen)
            var t = 0
            while t < special.count{
@@ -826,7 +828,7 @@ class GameController: UIViewController {
     }
     func callLoss(){
         print("inside")
-        if wrong == 4{
+        if wrong == 5{
         otherAlertMoment()
         }
     }
@@ -839,20 +841,32 @@ class GameController: UIViewController {
         print("printed var")
         switch hello {
         case 0:
-        var imagee = defaultImage[wrongg - 1]
+        if wrongg == 5{}
+        else { var imagee = defaultImage[wrongg - 1]
         personImage.image = imagee
+        }
         case 1:
+        if wrongg == 5 {}
+        else {
         var imageee = carlImage[wrongg - 1]
         personImage.image = imageee
+        }
         case 2:
+        if wrongg == 5{}
+        else{
         var imageeee = rockImage[wrongg - 1]
         personImage.image = imageeee
+        }
         case 3:
-        var imagq = imposter[wrongg - 1]
+        if wrongg == 5 {}
+        else{ var imagq = imposter[wrongg - 1]
         personImage.image = imagq
+        }
         case 4:
-        var imagi = dripSeaver[wrongg - 1]
+        if wrongg == 5{}
+        else{ var imagi = dripSeaver[wrongg - 1]
         personImage.image = imagi
+        }
         default:
         print("Some other character")
         }
@@ -861,8 +875,10 @@ class GameController: UIViewController {
     //reseting screen, wip!
     func resetScreen(){
         var num = Int.random(in: 0..<wordBank.count)
+        chosen = wordBank[num]
+        print("this is the word")
+        print(chosen)
         special.removeAll()
-        chosen = "hello"
         makeArray(wow: chosen)
         wrong = 0
         correct = 0
