@@ -29,7 +29,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         z.colors = [UIColor.green.cgColor, UIColor.systemYellow.cgColor]
         self.view.layer.insertSublayer(z, at: 0)
         
-        if let money = UserDefaults.standard.data(forKey: "Money2"){
+        if let money = UserDefaults.standard.data(forKey: "Money3"){
             let decoder = JSONDecoder()
             if let decoded = try? decoder.decode(Int.self, from: money){
                 print("working?")
@@ -61,7 +61,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
         z = 0
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(character.returnCurrency()){
-            UserDefaults.standard.set(encoded, forKey: "Money2")
+            UserDefaults.standard.set(encoded, forKey: "Money3")
             print("working?")
         }
     }
@@ -105,7 +105,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 // Persistence \\
                 let encoder = JSONEncoder()
                 if let encoded = try? encoder.encode(character.returnCurrency()){
-                    UserDefaults.standard.set(encoded, forKey: "Money2")
+                    UserDefaults.standard.set(encoded, forKey: "Money3")
                 }
                 
                 updateLabel()
