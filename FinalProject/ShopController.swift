@@ -83,7 +83,7 @@ class ShopController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let epic = UIAlertAction(title: "Obama Moment", style: .default, handler: nil)
                 success.addAction(epic)
                 present(success, animated: true, completion: nil)
-               let sound = Bundle.main.path(forResource: "mr-krabs", ofType: "mp3")!
+               let sound = Bundle.main.path(forResource: "Sheesh - Tik Tok Audio Sound Effect", ofType: "mp3")!
                let url = URL(fileURLWithPath: sound)
                 character.changeCurrency(subtract: x[indexPath.row])
                 character.changeCharacter(new: shawty[indexPath.row])
